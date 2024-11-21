@@ -1,0 +1,61 @@
+body {
+    background-image: url('starry.webp'); 
+    background-size: cover;                
+    background-position: center; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; 
+    padding: 20px;
+  }
+  
+  .module-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  
+  .module {
+    display: flex;
+    align-items: center;
+    background: #0b0c10; 
+    color: rgb(203, 203, 207);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+    backdrop-filter: blur(30px); 
+  }
+
+  .module h3{
+    color: #d6b013;
+  }
+  
+  .module img {
+    width: 100px; 
+    height: 100px; 
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .align-left {
+    flex-direction: row;
+  }
+  
+  .align-right {
+    flex-direction: row-reverse;
+  }
+  
+
+  /* hide kero  */
+.hidn {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* elemennts show kero */
+.hidn.show {
+  opacity: 1;
+  transform: translateX(0);
+}
